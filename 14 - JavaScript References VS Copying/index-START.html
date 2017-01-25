@@ -11,6 +11,21 @@
 
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+    const person = {
+      name: 'Wes Bos',
+      age: 80,
+    };
+
+    const team = players.slice();
+    const team2 = [].concat(players);
+    const team3 = [...players];
+    const team4 = Array.from(players);
+
+    const captain = Object.assign({}, person, {
+      number: 99,
+      age: 12,
+    });
+    const captain2 = JSON.parse(JSON.stringify(person));
 
     // and we want to make a copy of it.
 
